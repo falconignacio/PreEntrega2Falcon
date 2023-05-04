@@ -1,0 +1,131 @@
+main h1{
+    color: yellowgreen;
+    text-align: center;
+    font-size: 32px;
+}
+ul{
+    color: white;
+}
+h2{
+    color: yellowgreen;
+}
+body{
+    background-image: url(../imagenes/fonfon.jpg) ;
+    background-repeat: round;
+    text-align: center;
+    justify-content: space-around;
+}
+p{
+    color: white;
+    font-size: large;
+}
+div{
+    color: white
+
+    k;
+}
+main{color: white;}
+section div a{
+    background-color:white;
+    border: solid 7px black;
+    padding: 7px;
+    margin: 5px;
+
+}
+header nav ul li a {
+    color: antiquewhite;
+    font-size: 20px;
+
+}
+nav ul{
+    display: flex;
+   justify-content: space-around;
+    
+}
+.div1{
+   display: flex;
+   justify-content: space-around;
+   border-radius: 20px;
+
+}
+section h2{
+    text-align: center;
+}
+.odin img a{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.avengers{
+    display: flex;
+    justify-content: space-around;
+}
+.familia{
+    display: flex;
+    justify-content: space-around;
+}
+.thanosguerre{
+    display: flex;
+    justify-content: space-around;
+}
+.amistades{
+    display: flex;
+    justify-content: space-around;
+}
+.todocompleto{
+    display: flex;
+    flex-direction: column;
+
+}
+.videothor{
+
+}
+@media (max-width: 420px){
+    .videothor{
+        display: none;
+    }
+    footer iframe{
+        max-width: 400px;
+    }
+    .div1{
+        display: flex;
+        flex-direction: column;
+       margin: 80px; 
+       
+    }
+    .thor1{
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .odin{
+        display: flex;
+        flex-direction: column;
+    }
+    .odin img{
+        margin: auto;
+    }
+    .odin a{
+        max-width: 100px;
+        margin: auto;
+    }
+    .vengadores{
+        display: none;
+    }
+    .avengers{
+        display: flex;
+        flex-direction: column;
+    }
+    .avengers img{
+        margin: auto;
+    }
+
+}
+section a{
+    background-color:white;
+    border: solid 7px black;
+    padding: 7px;
+    margin: auto;
+    max-width: 100px;
+    
+}
+

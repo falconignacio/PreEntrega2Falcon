@@ -1,0 +1,72 @@
+main {
+    color: $color;
+
+    @media (max-width: 500px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        @extend %h1;
+    }
+
+    .p {
+        @media (max-width: 500px) {
+            max-width: 450px;
+        }
+    }
+
+    .div1 {
+        @media (max-width: 500px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: $sb;
+            
+        }
+
+        @extend %div1;
+    }
+
+    h2 {
+        @extend %h1;
+    }
+
+    .imagenes {
+        @media (max-width: 500px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+
+        @extend %influencias;
+    }
+
+    .botonera {
+        @extend %botones;
+    }
+
+    .avengers {
+        @media (max-width: 500px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        display: $dis1;
+        justify-content: $sb;
+    }
+
+    .thanos-guerreros {
+        @media (max-width: 500px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        display: $dis1;
+        justify-content: $sb;
+    }
+}

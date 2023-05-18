@@ -1,0 +1,56 @@
+%fondo{
+    background-image: url(../../imagenes/finalfon.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+%h1{
+    color: yellowgreen;
+    text-align: center;
+    font-size: 32px;
+    padding: 30px;
+}
+%div1{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    align-items: center;
+}
+%section{
+    background-color: white;
+    border: solid 7px black;
+    padding: 7px;
+    margin: auto;
+    max-width: 100px;
+    justify-content: space-around;
+}
+%influencias{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    align-items: center;
+}
+%card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: none;
+}
+%avengers{
+    display: grid;
+    justify-content: space-around
+    ;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+}
+%botones{
+    background-color: white;
+    border: solid 7px black;
+    padding: 7px;
+    margin: auto;
+    max-width: 100px;
+}
+%mobile{
+    max-width: 500px;
+    margin: 30px;
+}

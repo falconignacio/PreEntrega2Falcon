@@ -9,7 +9,7 @@ main h2, main h1 {
   color: yellowgreen;
   text-align: center;
   font-size: 32px;
-  padding: 30px;
+  padding: 60px;
 }
 
 main .div1 {
@@ -23,15 +23,7 @@ main .imagenes {
   display: flex;
   justify-content: space-around;
   border-radius: 20px;
-  align-items: center;
-}
-
-main .botonera {
-  background-color: white;
-  border: solid 7px black;
-  padding: 7px;
-  margin: auto;
-  max-width: 100px;
+  align-items: column;
 }
 
 main {
@@ -64,9 +56,15 @@ main {
     flex-direction: column;
   }
 }
+main .familia {
+  padding-left: 500px;
+  padding-right: 500px;
+  padding-bottom: 30px;
+}
 main .avengers {
-  display: flex;
-  justify-content: space-around;
+  padding-left: 500px;
+  padding-right: 500px;
+  padding-bottom: 30px;
 }
 @media (max-width: 500px) {
   main .avengers {
@@ -75,9 +73,15 @@ main .avengers {
     flex-direction: column;
   }
 }
+main .amistades {
+  padding-left: 500px;
+  padding-right: 500px;
+  padding-bottom: 30px;
+}
 main .thanos-guerreros {
-  display: flex;
-  justify-content: space-around;
+  padding-left: 500px;
+  padding-right: 500px;
+  padding-bottom: 30px;
 }
 @media (max-width: 500px) {
   main .thanos-guerreros {
@@ -86,7 +90,64 @@ main .thanos-guerreros {
     flex-direction: column;
   }
 }
+main .btn {
+  position: relative;
+  display: block;
+  height: 77px;
+  width: 150px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  overflow: hidden;
+  transition: all 500ms ease;
+  border: 2px solid #20e2d7;
+  margin-bottom: 40px;
+  z-index: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+main .btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  background-color: #20e2d7;
+  transition: all 500ms ease;
+  z-index: -1;
+}
+main .btn--1::before {
+  width: 0;
+  height: 100%;
+}
+main .btn--1:hover {
+  color: #434343;
+}
+main .btn--1:hover::before {
+  width: 100%;
+}
+main .btn--2:hover {
+  background-color: #20e2d7;
+  box-shadow: 0 0 10px #20e2d7, 0 0 20px #20e2d7, 0 0 20px #20e2d7;
+  color: #434343;
+}
+main .btn--3:hover {
+  animation: shadow-pulse 1000ms 1;
+  background-color: #20e2d7;
+  color: #434343;
+}
 
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(32, 226, 215, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
+  }
+}
 footer {
   color: white;
   padding: 10px;
